@@ -693,7 +693,7 @@ async function del(coll,id){
 
 /* ---------- hosting config: fill these in (see README) ---------- */
 const GH_OWNER="pickleballers26",GH_REPO="pickleball",GH_BRANCH="main";
-const ENC_TOKEN="pI1KhsbJo/U935EUE8RZQZR+Ebk3dCzrH37cJKEXQJKsQD7jEwJcKZhFVIu7h2FLI4LI94BVJjoYqhs+oduptXQt93GyF7xlw961V+/RdY4oLN5H9NH5pH8Y61S0MX3eBbUCrVU8BVVca01RC+wULXxWHACsGT6fhTMAi5YjprL86rJ320VIZCY=";
+const ENC_TOKEN="const ENC_TOKEN="gmNvvV7J8yPt7PvcFlT1NMs/pBrTl4HEuvxbvI2mUL/3OgdZad5dKvP5WePK7DJBhFDjZe2VhKGN0bOagMmRiaw3IVb8bI+E0wvH0xgsp5+aVwI0YUsvVL7ioZB+MPDUrT5j1aYQVlobmU+hfekDbQ5TMwxPM4d2e3ZR3KgouVln/c1YEJIuGSI=";
 const MAX_MB=20;
 const GH_ON=GH_OWNER.indexOf("PASTE")!==0;
 let PW="",TOKEN="",STATE={},lastWrite=0,unlocked=false;
@@ -1172,7 +1172,7 @@ renderAll();
 (async()=>{
   let db=null;
   if(GH_ON&&PW)await tryPw(PW);
-  db=GH_ON?makeDB():null;
+  db=_ON?makeDB():null;
   if(db){
     mode="db";DB=db;
     const onErr=()=>{};
